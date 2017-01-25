@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`kg-test`
+KG-Test element
+
+@demo demo/index.html 
+-->
+
+<dom-module id="kg-test">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'kg-test',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'kg-test',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
